@@ -32,3 +32,27 @@ nav{
     padding-top:100px ;
 }
 
+
+#more {display: none;}
+
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+
+.jumbotron{
+    
+}
+
+.card{
+    background-color: #eeeeee;
+}
+
+#CostomerService{
+    z-index: -100;
+}

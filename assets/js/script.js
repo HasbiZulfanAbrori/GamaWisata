@@ -1,17 +1,18 @@
-const parentContainer =  document.querySelector('.produk');
+function ReadMore() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
+    }
+  }
+  
 
-parentContainer.addEventListener('click', event=>{
-
-    const current = event.target;
-
-    const isReadMoreBtn = current.className.includes('btn btn-primary');
-
-    if(!isReadMoreBtn) return;
-
-    const currentText = event.target.parentNode.querySelector('.read-more');
-
-    currentText.classList.toggle('read-more--show');
-
-    current.textContent = current.textContent.includes('Read More') ? "Read Less..." : "Read More...";
-
-})
+  var video = document.getElementById("myVideo");

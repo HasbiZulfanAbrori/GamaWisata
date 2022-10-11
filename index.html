@@ -4,13 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gama Wisata</title>
-    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link href="assets/style.css"  rel="stylesheet" type="text/css">
+    <script src="assets/js/script.js"></script>
   </head>
   <body>
+    <video autoplay muted loop id="myVideo">
+        <source src="assets/img/HYMNE AIRLANGGA   -   2022.mp4" type="video/mp4">
+    </video>
     <nav class="navbar navbar-expand-sm fixed-top">
         <div class="container" id="navbar">
             <div class="container-fluid">
@@ -77,11 +80,10 @@
                         </div>
                         <div class="card-body">
                         <h4 class="card-title">Tiket Pesawat Terbang</h4>
-                        <p class="card-text">Gama Wisata menyediakan layanan untuk pembelian tiket pesawat baik untuk
-                                domestik maupun internasional. Saat ini Gama Wisata telah menjadi agent resmi IATA (International Air Transport Association) yang merupakan organisasi perdagangan internasional yang terdiri dari maskapai-maskapai penerbangan
-                                Pelayanan tiket pesawat kami lakukan dari hari Senin sampai dengan hari Minggu jam 08.00 - 21.00 WIB, Selain Tiket Pesawat Gama Wisata juga menyediakan tiket kereta untuk tujuan di seluruh Indonesia
-                        </p>
-                        <button type="button" class="btn btn-primary">Read More...</button>
+                        <p>Gama Wisata menyediakan layanan untuk pembelian tiket pesawat baik untuk tujuan domestik maupun internasional. Saat ini Gama Wisata<span id="dots">...</span>
+                            <span id="more">telah menjadi agent resmi IATA (International Air Transport Association) yang merupakan organisasi perdagangan internasional yang terdiri dari maskapai-maskapai penerbangan
+                                Pelayanan tiket pesawat kami lakukan dari hari Senin sampai dengan hari Minggu jam 08.00 - 21.00 WIB, Selain Tiket Pesawat Gama Wisata juga menyediakan tiket kereta untuk tujua</span></p>
+                        <button class="btn btn-primary" onclick="ReadMore()" id="myBtn">Read more</button>
                         </div>
                     </div>
                 </div>
@@ -92,8 +94,9 @@
                         </div>
                         <div class="card-body">
                         <h4 class="card-title">Tiket Kereta Api </h4>
-                        <p class="card-text">Kebutuhan transportasi darat khusunya kereta api juga memberikan peluang yang besar kepada para penumpang, Gama Wisata, selain menyediakan tiket pesawat juga melayani penjualan tiket kereta api, kami membuka layanan tiket kereta api setiap hari Senin sampai dengan Minggu pukul 08.00 - 21.00</p>
-                        <button type="button" class="btn btn-primary">Read More...</button>
+                        <p>Kebutuhan transportasi darat khusunya kereta api juga memberikan peluang yang besar kepada para penumpang, Gama Wisata, selain menyediakan<span id="dots">...</span>
+                            <span id="more">tiket pesawat juga melayani penjualan tiket kereta api, kami membuka layanan tiket kereta api setiap hari Senin sampai dengan Minggu pukul 08.00 - 21.00.</span></p>
+                        <button class="btn btn-primary" onclick="ReadMore()" id="myBtn">Read more</button>
                         </div>
                     </div>
                 </div>
@@ -104,10 +107,11 @@
                         </div>
                         <div class="card-body">
                         <h4 class="card-title">Voucher Hotel </h4>
-                        <p class="card-text">Gama Wisata kini menyediakan fasilitas agar para pelanggan dapat melakukan pemeanan kamar di 250.000 hotel yang tersebar di seluruh penjuru dunia dengan lebih cepat, lebih mudah, lebih murah.
-                            Dengan jaringan global dan koneksi yang kuat di Singapura, Kuala Lumpur, Beijing, Hongkong, Dubai, Bangkok, Osaka, Sydney, Melbourne, Paris, London, Roma serta ratusan kota-kota besar di seluruh dunia, pemesanan hotel melalui Gama Wisata adalah pilihan yang bijak dan tepat.
-                            Sebagai biro perjalanan wisata yang berpengalaman dan berdiri sejak tahun 2002,  kami siap memberikan pelayanan penuh kepada pelanggan yang mengalami kendala dan permasalahan dangan reservasi hotel</p>
-                        <button type="button" class="btn btn-primary">Read More...</button>
+                        <p>Gama Wisata kini menyediakan fasilitas agar para pelanggan dapat melakukan pemeanan kamar di 250.000 hotel yang tersebar di seluruh penjuru dunia<span id="dots">...</span>
+                            <span id="more"> dengan lebih cepat, lebih mudah, lebih murah.
+                                Dengan jaringan global dan koneksi yang kuat di Singapura, Kuala Lumpur, Beijing, Hongkong, Dubai, Bangkok, Osaka, Sydney, Melbourne, Paris, London, Roma serta ratusan kota-kota besar di seluruh dunia, pemesanan hotel melalui Gama Wisata adalah pilihan yang bijak dan tepat.
+                                Sebagai biro perjalanan wisata yang berpengalaman dan berdiri sejak tahun 2002,  kami siap memberikan pelayanan penuh kepada pelanggan yang mengalami kendala dan permasalahan dangan reservasi hotel</span></p>
+                        <button class="btn btn-primary" onclick="ReadMore()" id="myBtn">Read more</button>
                         </div>
                     </div>
                 </div>
