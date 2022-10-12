@@ -28,6 +28,20 @@ nav{
 }
 
 
+.carousel-item{
+    margin-left: 354px;
+    height: 240px;
+    width: 1112px;
+}
+
+.carousel-indicators{
+    margin-top: 350px;
+}
+
+#Profil{
+    
+}
+
 .padd100{
     padding-top:100px ;
 }
@@ -46,7 +60,7 @@ nav{
 
 
 .jumbotron{
-    
+    z-index: -100;
 }
 
 .card{
